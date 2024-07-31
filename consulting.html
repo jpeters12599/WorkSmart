@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkSmart - Consulting Options</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            background-image: url('https://wallpapers.com/images/featured/cyber-background-qrvi98v4g2ezuomr.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        header {
+            background-color: rgba(26, 26, 26, 0.9);
+            color: #f5f5f5;
+            padding: 20px 0;
+            text-align: left;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding-left: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1em;
+            margin-top: 5px;
+        }
+        nav {
+            display: flex;
+            justify-content: right;
+            background-color: rgba(51, 51, 51, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 80px;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav a {
+            color: #f5f5f5;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .nav-line {
+            height: 2px;
+            background-color: #e0e0e0;
+            width: 100%;
+            position: fixed;
+            top: 120px;
+            z-index: 999;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 160px auto 40px auto;
+            padding: 40px;
+            background-color: rgba(38, 38, 38, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .consulting-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .consulting-item {
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .consulting-item h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .consulting-item p {
+            font-size: 1em;
+            margin: 10px 0;
+            color: #cccccc;
+        }
+        .consulting-item .focus {
+            font-size: 1em;
+            color: #ffcc00;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: #f5f5f5;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>WorkSmart</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="mission.html">Mission</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="nav-line"></div>
+
+<div class="container">
+    <h2>Consulting Options</h2>
+    <div class="consulting-grid">
+        <div class="consulting-item">
+            <h3>Remote Work Transition</h3>
+            <p>Expert guidance on shifting your business operations to a remote work model, ensuring a smooth and effective transition.</p>
+            <p class="focus">Focus: Strategy development, employee training, tools implementation</p>
+        </div>
+        <div class="consulting-item">
+            <h3>Productivity Optimization</h3>
+            <p>Consulting services aimed at enhancing team productivity and collaboration in a remote work environment.</p>
+            <p class="focus">Focus: Workflow optimization, time management, communication tools</p>
+        </div>
+        <div class="consulting-item">
+            <h3>IT Infrastructure Setup</h3>
+            <p>Comprehensive IT solutions to set up and secure your remote work infrastructure.</p>
+            <p class="focus">Focus: Network security, cloud services, remote access solutions</p>
+        </div>
+        <div class="consulting-item">
+            <h3>Employee Well-being</h3>
+            <p>Strategies to maintain and improve employee well-being and work-life balance in a remote work setting.</p>
+            <p class="focus">Focus: Mental health support, ergonomic assessments, work-life balance</p>
+        </div>
+        <div class="consulting-item">
+            <h3>Compliance & Security</h3>
+            <p>Ensure your remote operations meet industry standards for compliance and security.</p>
+            <p class="focus">Focus: Data protection, regulatory compliance, security audits</p>
+        </div>
+        <div class="consulting-item">
+            <h3>Custom Consulting Solutions</h3>
+            <p>Tailored consulting services to meet the unique needs of your business and remote work challenges.</p>
+            <p class="focus">Focus: Customized strategies, ongoing support, flexible solutions</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 WorkSmart. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

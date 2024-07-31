@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkSmart - Ergonomic Office Furniture</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            background-image: url('https://wallpapers.com/images/featured/cyber-background-qrvi98v4g2ezuomr.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        header {
+            background-color: rgba(26, 26, 26, 0.9);
+            color: #f5f5f5;
+            padding: 20px 0;
+            text-align: left;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding-left: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1em;
+            margin-top: 5px;
+        }
+        nav {
+            display: flex;
+            justify-content: right;
+            background-color: rgba(51, 51, 51, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 80px;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav a {
+            color: #f5f5f5;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .nav-line {
+            height: 2px;
+            background-color: #e0e0e0;
+            width: 100%;
+            position: fixed;
+            top: 120px;
+            z-index: 999;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 160px auto 40px auto;
+            padding: 40px;
+            background-color: rgba(38, 38, 38, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .furniture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .furniture-item {
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .furniture-item img {
+            width: 300px;
+            height: 300px ;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .furniture-item h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .furniture-item p {
+            font-size: 1em;
+            margin: 10px 0;
+            color: #cccccc;
+        }
+        .furniture-item .price {
+            font-size: 1.2em;
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: #f5f5f5;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>WorkSmart</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="mission.html">Mission</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="nav-line"></div>
+
+<div class="container">
+    <h2>Ergonomic Office Furniture</h2>
+    <div class="furniture-grid">
+        <div class="furniture-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzvw43v_VqwcsXMGpYxb6SDjTIoVhJGXAkyItn7cdnfTJkf_hFtds3UF0GNAFh9qm_Avs&usqp=CAU" alt="Ergonomic Chair">
+            <h3>Ergonomic Chair</h3>
+            <p>Experience comfort and support with our state-of-the-art ergonomic chair designed to reduce strain during long working hours.</p>
+            <p class="price">$199.99</p>
+        </div>
+        <div class="furniture-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZRuOOC1u67WBOKUYSwh6wX9jvEN3nvIeW1w&usqp=CAU" alt="Adjustable Standing Desk">
+            <h3>Adjustable Standing Desk</h3>
+            <p>Stay active and reduce back pain with our adjustable standing desk, easily customizable for sitting or standing positions.</p>
+            <p class="price">$299.99</p>
+        </div>
+        <div class="furniture-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzNn17yibpCTtv1vS_cC70USVNw4RQcdVNaw&usqp=CAU" alt="Memory Foam Seat Cushion">
+            <h3>Memory Foam Seat Cushion</h3>
+            <p>Enhance your sitting experience with a memory foam cushion that provides excellent support and reduces pressure on your spine.</p>
+            <p class="price">$49.99</p>
+        </div>
+        <div class="furniture-item">
+            <img src="data:image/jpeg;base64,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" alt="Ergonomic Footrest">
+            <h3>Ergonomic Footrest</h3>
+            <p>Improve your posture and comfort with our ergonomic footrest, designed to keep your feet supported and relaxed throughout the day.</p>
+            <p class="price">$39.99</p>
+        </div>
+        <div class="furniture-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThSe5ARljH1LNKSpBB7Tv2VU3UzC_1JMjt8g&usqp=CAU" alt="Lumbar Support Pillow">
+            <h3>Lumbar Support Pillow</h3>
+            <p>Support your lower back with our lumbar support pillow, ideal for reducing stress on your spine and improving your sitting posture.</p>
+            <p class="price">$29.99</p>
+        </div>
+        <div class="furniture-item">
+            <img src="data:image/jpeg;base64,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" alt="Monitor Stand">
+            <h3>Monitor Stand</h3>
+            <p>Elevate your monitor to eye level with our sturdy monitor stand, reducing neck strain and promoting better posture while working.</p>
+            <p class="price">$59.99</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 WorkSmart. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

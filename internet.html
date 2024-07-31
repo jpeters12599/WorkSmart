@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkSmart - High-Speed Internet Options</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            background-image: url('https://wallpapers.com/images/featured/cyber-background-qrvi98v4g2ezuomr.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        header {
+            background-color: rgba(26, 26, 26, 0.9);
+            color: #f5f5f5;
+            padding: 20px 0;
+            text-align: left;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding-left: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1em;
+            margin-top: 5px;
+        }
+        nav {
+            display: flex;
+            justify-content: right;
+            background-color: rgba(51, 51, 51, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 80px;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav a {
+            color: #f5f5f5;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .nav-line {
+            height: 2px;
+            background-color: #e0e0e0;
+            width: 100%;
+            position: fixed;
+            top: 120px;
+            z-index: 999;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 160px auto 40px auto;
+            padding: 40px;
+            background-color: rgba(38, 38, 38, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .internet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .internet-item {
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .internet-item h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .internet-item p {
+            font-size: 1em;
+            margin: 10px 0;
+            color: #cccccc;
+        }
+        .internet-item .speed {
+            font-size: 1.2em;
+            color: #ffcc00;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .internet-item .price {
+            font-size: 1.2em;
+            color: #ffcc00;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: #f5f5f5;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>WorkSmart</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="mission.html">Mission</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="nav-line"></div>
+
+<div class="container">
+    <h2>High-Speed Internet Options</h2>
+    <div class="internet-grid">
+        <div class="internet-item">
+            <h3>Basic Plan</h3>
+            <p>Perfect for casual browsing and working from home with minimal data needs.</p>
+            <p class="speed">Speed: 50 Mbps</p>
+            <p class="price">$39.99/month</p>
+        </div>
+        <div class="internet-item">
+            <h3>Standard Plan</h3>
+            <p>Ideal for streaming, video conferencing, and multi-device usage.</p>
+            <p class="speed">Speed: 100 Mbps</p>
+            <p class="price">$59.99/month</p>
+        </div>
+        <div class="internet-item">
+            <h3>Premium Plan</h3>
+            <p>High-speed plan for gaming, 4K streaming, and heavy data usage.</p>
+            <p class="speed">Speed: 200 Mbps</p>
+            <p class="price">$79.99/month</p>
+        </div>
+        <div class="internet-item">
+            <h3>Ultimate Plan</h3>
+            <p>Top-tier plan for large households or offices with demanding data needs.</p>
+            <p class="speed">Speed: 500 Mbps</p>
+            <p class="price">$99.99/month</p>
+        </div>
+        <div class="internet-item">
+            <h3>Business Plan</h3>
+            <p>Reliable, high-speed connection tailored for small to medium-sized businesses.</p>
+            <p class="speed">Speed: 1 Gbps</p>
+            <p class="price">$149.99/month</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 WorkSmart. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
