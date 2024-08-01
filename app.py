@@ -1,7 +1,11 @@
-from flask import Flask, request, jsonify
-from chatbot import get_response 
+from flask import Flask, request, jsonify, render_template
+from chatbot import get_response
 
 app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
 
 @app.route('/chat', methods=['POST'])
 def chat():
