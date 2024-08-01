@@ -139,13 +139,13 @@
     <a href="services.html">Learn More</a>
 </div>
 <body>
-    <h1>Chat with SimpleBot</h1>
     <div id="chat-container">
         <div id="chat-messages"></div>
         <input type="text" id="user-input" placeholder="Type your message...">
         <button onclick="sendMessage()">Send</button>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         function sendMessage() {
             var userInput = $('#user-input').val();
@@ -164,6 +164,7 @@
             $('#user-input').val('');
         }
     </script>
+    </body>
     
 <div class="container">
     <h2>Welcome to WorkSmart</h2>
