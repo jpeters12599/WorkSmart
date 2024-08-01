@@ -138,34 +138,6 @@
     <p>Transform your remote work experience with our comprehensive solutions</p>
     <a href="services.html">Learn More</a>
 </div>
-<body>
-    <div id="chat-container">
-        <div id="chat-messages"></div>
-        <input type="text" id="user-input" placeholder="Type your message...">
-        <button onclick="sendMessage()">Send</button>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        function sendMessage() {
-            var userInput = $('#user-input').val();
-            $('#chat-messages').append('<p><strong>You:</strong> ' + userInput + '</p>');
-            
-            $.ajax({
-                url: '/chat',
-                method: 'POST',
-                contentType: 'application/json',
-                data: JSON.stringify({message: userInput}),
-                success: function(response) {
-                    $('#chat-messages').append('<p><strong>Bot:</strong> ' + response.response + '</p>');
-                }
-            });
-
-            $('#user-input').val('');
-        }
-    </script>
-    </body>
-    
 <div class="container">
     <h2>Welcome to WorkSmart</h2>
     <p>At WorkSmart, we offer comprehensive solutions for remote work, including ergonomic office furniture, high-speed internet setups, productivity software, and consulting services. Explore our services and learn more about how we can help you thrive in a remote work environment.</p>
